@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\heseninTaski_Ecommerce.props" />
+</Project>

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<heseninTaski_Ecommerce.Models.Product>
+
+<h2>Product List</h2>
+
+<a href="/Product/Create">Create New Product</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Slug</th>
+            <th>Price</th>
+            <th>CreatedBy</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Slug</td>
+                <td>@product.Price</td>
+                <td>@product.CreatedBy</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

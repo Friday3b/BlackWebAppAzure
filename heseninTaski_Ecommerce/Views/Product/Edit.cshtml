@@ -1,0 +1,80 @@
+﻿@* @model heseninTaski_Ecommerce.Models.Product *@
+
+@* <h2>Edit Product</h2> *@
+
+@* <form asp-action="Edit" method="post"> *@
+@*     <input type="hidden" asp-for="Id" /> *@
+
+@*     <div class="form-group"> *@
+@*         <label asp-for="Name"></label> *@
+@*         <input asp-for="Name" class="form-control" /> *@
+@*     </div> *@
+
+@*     <div class="form-group"> *@
+@*         <label asp-for="Description"></label> *@
+@*         <input asp-for="Description" class="form-control" /> *@
+@*     </div> *@
+
+@*     <div class="form-group"> *@
+@*         <label asp-for="Slug"></label> *@
+@*         <input asp-for="Slug" class="form-control" /> *@
+@*     </div> *@
+
+@*     <div class="form-group"> *@
+@*         <label asp-for="Price"></label> *@
+@*         <input asp-for="Price" class="form-control" /> *@
+@*     </div> *@
+
+@*     <div class="form-group"> *@
+@*         <label asp-for="CreatedBy"></label> *@
+@*         <input asp-for="CreatedBy" class="form-control" /> *@
+@*     </div> *@
+
+@*     <button type="submit" class="btn btn-primary">Update</button> *@
+@* </form> *@
+
+
+
+@model heseninTaski_Ecommerce.Models.Product
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Edit Product</h2>
+
+    <div class="card shadow-lg">
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="Name" class="font-weight-bold"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter product name" required />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Description" class="font-weight-bold"></label>
+                    <textarea asp-for="Description" class="form-control" placeholder="Enter product description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Slug" class="font-weight-bold"></label>
+                    <input asp-for="Slug" class="form-control" placeholder="Enter product slug" required />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Price" class="font-weight-bold"></label>
+                    <input asp-for="Price" class="form-control" placeholder="Enter product price" type="number" required />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CreatedBy" class="font-weight-bold"></label>
+                    <input asp-for="CreatedBy" class="form-control" placeholder="Enter creator's username" required />
+                </div>
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-success">Update Product</button>
+                    <a href="/Product/Index" class="btn btn-secondary ml-3">Back to Product List</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

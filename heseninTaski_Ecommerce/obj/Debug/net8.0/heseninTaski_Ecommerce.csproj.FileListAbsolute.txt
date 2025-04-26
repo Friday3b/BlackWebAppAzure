@@ -90,3 +90,4 @@ C:\Users\Taleh\source\repos\heseninTaski_Ecommerce\heseninTaski_Ecommerce\obj\De
 C:\Users\Taleh\source\repos\heseninTaski_Ecommerce\heseninTaski_Ecommerce\obj\Debug\net8.0\heseninTaski_Ecommerce.pdb
 C:\Users\Taleh\source\repos\heseninTaski_Ecommerce\heseninTaski_Ecommerce\obj\Debug\net8.0\heseninTaski_Ecommerce.genruntimeconfig.cache
 C:\Users\Taleh\source\repos\heseninTaski_Ecommerce\heseninTaski_Ecommerce\obj\Debug\net8.0\ref\heseninTaski_Ecommerce.dll
+C:\Users\Taleh\source\repos\heseninTaski_Ecommerce\heseninTaski_Ecommerce\obj\Debug\net8.0\heseninTaski_Ecommerce.sourcelink.json

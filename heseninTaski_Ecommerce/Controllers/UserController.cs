@@ -24,13 +24,37 @@ public class UserController : Controller
         return View();
     }
 
+    //[HttpPost]
+    //public IActionResult Create(User user)
+    //{
+    //    if (!ModelState.IsValid) return View(user);
+
+    //    _context.Users.Add(user);
+    //    _context.SaveChanges();
+    //    return RedirectToAction("Index","Home");
+    //    //return RedirectToAction("Login", "Account");
+
+    //}
+
+
     [HttpPost]
     public IActionResult Create(User user)
     {
-        if (!ModelState.IsValid) return View(user);
+        if (!ModelState.IsValid)
+            return View(user);
+
+        // Eyni username ilə user varsa, xətanı göstər
+        var existingUser = _context.Users.FirstOrDefault(u => u.Username == user.Username);
+        if (existingUser != null)
+        {
+            ModelState.AddModelError("Username", "Bu istifadəçi adı artıq mövcuddur.");
+            return View(user);
+        }
 
         _context.Users.Add(user);
         _context.SaveChanges();
-        return RedirectToAction("Index");
+
+        return RedirectToAction("Index", "Home");
     }
+
 }

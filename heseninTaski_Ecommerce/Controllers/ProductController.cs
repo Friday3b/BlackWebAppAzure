@@ -12,7 +12,7 @@ namespace heseninTaski_Ecommerce.Controllers
         public ProductController(AppDbContext context)
         {
             _context = context;
-        }`
+        }
 
         // GET: Product/Index
         public IActionResult Index()

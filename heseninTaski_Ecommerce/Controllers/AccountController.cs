@@ -27,6 +27,7 @@ namespace heseninTaski_Ecommerce.Controllers
         public IActionResult Login(string username, string password)
         {
             Console.WriteLine("username geldi");
+            Console.WriteLine("Username gelmesede olar , esas buz burdayiq ))))");
             var user = _context.Users
                 .FirstOrDefault(u => u.Username == username && u.Password == password);
 

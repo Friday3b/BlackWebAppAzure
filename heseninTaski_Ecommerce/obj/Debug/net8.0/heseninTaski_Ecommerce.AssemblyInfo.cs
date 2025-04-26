@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("heseninTaski_Ecommerce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dd07a3229e241757f6efcb5f1fdf5dc8632dd91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd2ba83e7f6a603b22e2cf55a5f0aad33f2b5a5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("heseninTaski_Ecommerce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("heseninTaski_Ecommerce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

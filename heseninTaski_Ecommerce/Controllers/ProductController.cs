@@ -19,6 +19,7 @@ namespace heseninTaski_Ecommerce.Controllers
         {
             // Session-da istifadəçi məlumatını yoxlayırıq
             var username = HttpContext.Session.GetString("Username");
+            Console.WriteLine("sadece yoxlama ucun edirem --- hello its me !! :))");
 
             if (string.IsNullOrEmpty(username))
             {
